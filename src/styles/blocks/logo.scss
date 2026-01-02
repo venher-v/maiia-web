@@ -1,0 +1,21 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.logo {
+  inline-size: 138px;
+  block-size: 57px;
+  display: block;
+
+  background: url("../../img/icon/maine-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    inline-size: 470px;
+    block-size: 120px;
+
+    background: url("../../img/icon/main-logo-tablet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

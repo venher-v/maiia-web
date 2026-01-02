@@ -1,0 +1,108 @@
+@use "../utils/mixins" as *;
+
+.hero {
+  @include onTablet {
+    min-block-size: 85svh;
+  }
+
+  &__image {
+    inline-size: 100%;
+    block-size: 50vh;
+    background-image: url("../../img/header-mobile.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @include onDesktop {
+      block-size: 70vh;
+      background-image: url("../../img/header-desktop.webp");
+      background-position: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin-block-start: 36px;
+
+    @include onTablet {
+      align-items: center;
+    }
+
+    @include onDesktop {
+      margin-block-start: 58px;
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    display: none;
+    font-family: Great Vibes;
+    font-size: 200px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: normal;
+
+    &-text {
+      display: inline-block;
+      font-size: 80px;
+      line-height: 0.75;
+      letter-spacing: normal;
+    }
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    @include onTablet {
+      gap: 16px;
+    }
+
+    @include onDesktop {
+      @include pageGrid;
+      row-gap: 18px;
+      column-gap: 40px;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    flex: 1;
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
+
+    &--left-bottom {
+      @include onDesktop {
+        grid-area: 2 / 1 / 3 / 7;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+      margin-block-end: 4px;
+
+      @include onTablet {
+        font-size: 36px;
+      }
+
+      @include onDesktop {
+        font-size: 40px;
+      }
+    }
+
+    &-text {
+      @include onTablet {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use '../utils/mixins' as *;
+
+.container {
+  box-sizing: border-box;
+  padding-inline: 20px;
+
+  @include onTablet {
+  padding-inline: 50px;
+  }
+
+  @include onDesktop {
+    display: block;
+    max-inline-size: 1440px;
+    margin: 0 auto;
+    padding-inline: 120px;
+  }
+}

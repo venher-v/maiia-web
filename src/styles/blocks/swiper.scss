@@ -1,0 +1,43 @@
+.swiper {
+
+  &-wrapper {
+    align-items: stretch;
+  }
+
+  &-slide {
+    display: flex;
+    block-size: auto !important;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &-pagination {
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    padding-block: 5px;
+
+    &-bullet {
+      --swiper-pagination-bullet-horizontal-gap: 0;
+      background: #eae2cf;
+      opacity: 1;
+      inline-size: 9px;
+      block-size: 9px;
+      border-radius: 50%;
+
+      &-active {
+        background-color: #1a5a4c;
+
+      }
+
+      &-active-main {
+          transform: scale(1.2);
+        }
+    }
+  }
+}

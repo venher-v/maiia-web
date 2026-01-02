@@ -1,0 +1,26 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.section-title {
+  margin-block-end: 16px;
+
+  @include onTablet {
+    margin-block-end: 36px;
+  }
+
+  @include onDesktop {
+    margin-block-end: 44px;
+  }
+
+  &--tablet {
+    @include onTablet {
+      text-align: left;
+    }
+  }
+
+  &--desktop {
+    @include onDesktop {
+      text-align: center;
+    }
+  }
+}

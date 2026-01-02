@@ -1,0 +1,51 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.page {
+  background-color: $bcgMainColor;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  color: $txtMainColor;
+  scroll-behavior: smooth;
+
+  @include onDesktop {
+      scroll-padding-top: 65px;
+  }
+
+  -webkit-tap-highlight-color: transparent;
+
+  transition: all $timeDuration;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
+  &__menu {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:target {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+
+    @include onDesktop {
+      transform: none;
+      opacity: 1;
+      pointer-events: auto;
+      height: fit-content;
+
+      z-index: 999;
+    }
+  }
+}

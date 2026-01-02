@@ -1,0 +1,15 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.title {
+  display: block;
+  font-family: Great Vibes;
+  font-size: 40px;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: center;
+
+  @include onTablet {
+    font-size: 64px;
+  }
+}

@@ -1,0 +1,27 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.icon {
+  display: flex;
+  inline-size: 24px;
+  block-size: 24px;
+
+  background-size: cover;
+
+  @include onTablet {
+    inline-size: 36px;
+    block-size: 36px;
+  }
+
+  &--open {
+    background-image: url("../../img/icon/icon-burger-menu.png");
+
+    &:hover {
+      background-image: url("../../img/icon/icon-burger-menu-hover.png");
+    }
+  }
+
+  &--close {
+    background-image: url("../../img/icon/Icon-close.png");
+  }
+}

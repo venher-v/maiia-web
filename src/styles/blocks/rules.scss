@@ -1,0 +1,123 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.rules {
+  &__content {
+    position: relative;
+    padding-block: 58px;
+    padding-inline: 8px;
+    background: url("../../img/bcg-vertical.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      inline-size: 100%;
+      block-size: 24px;
+
+      background: url("../../img/circle.svg");
+      background-repeat: space;
+      background-size: 52px 24px;
+
+      @include onTablet {
+        top: 16px;
+        block-size: 36px;
+        background-size: 72px 36px;
+      }
+    }
+
+    @include onTablet {
+      padding-block-start: 88px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include onTablet {
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    margin: 0 auto;
+    padding-block-start: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-block-end: 8px;
+
+    @include onTablet {
+      font-size: 24px;
+      margin-block-end: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    padding-inline: 4px;
+    line-height: 1.3;
+    max-width: 60ch;
+
+    @include onTablet {
+      padding-inline: 8px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @include onTablet {
+        gap: 24px;
+      }
+    }
+  }
+
+  &__summary {
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &-icon {
+      inline-size: 20px;
+      block-size: 20px;
+      background: url("../../img/icon/acordion-arow.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__details[open] {
+    .rules__summary {
+      &-text {
+        display: none;
+      }
+
+      &-icon {
+        display: none;
+      }
+    }
+  }
+}

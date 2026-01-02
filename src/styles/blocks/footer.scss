@@ -1,0 +1,72 @@
+@use '../utils/mixins' as *;
+
+.footer {
+  padding-block-start: 36px;
+  background: linear-gradient(
+    180deg,
+    rgba(244, 244, 244, 0) 0.48%,
+    #eeeadf 53.85%,
+    #eae2cf 100%
+  );
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    width: 100%;
+
+    @include onDesktop {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    position: relative;
+    inline-size: max-content;
+
+    padding-inline-start: 28px;
+    font-family: inherit;
+    color: inherit;
+    font-size: 16px;
+    line-height: 1.3;
+    text-decoration: none;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      inline-size: 24px;
+      block-size: 24px;
+
+      background-image: url("../../img/icon/location-icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include onDesktop {
+        inline-size: 34px;
+        block-size: 34px;
+      }
+    }
+
+    @include onDesktop {
+      font-size: 20px;
+      padding-inline-start: 42px;
+    }
+  }
+
+  &__map {
+    inline-size: 100%;
+    block-size: 200px;
+    border: 0;
+
+    @include onDesktop {
+      inline-size: 58.83%;
+    }
+  }
+}

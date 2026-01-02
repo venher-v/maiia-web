@@ -1,0 +1,23 @@
+@use "utils/variables" as *;
+@use "utils/mixins" as *;
+
+@use "blocks/page";
+@use "blocks/main";
+@use "blocks/container";
+@use "blocks/top-bar";
+@use "blocks/logo";
+@use "blocks/icon";
+@use "blocks/image";
+@use "blocks/menu";
+@use "blocks/hero";
+@use "blocks/title";
+@use "blocks/section-title";
+@use "blocks/pilates";
+@use "blocks/equipment";
+@use "blocks/swiper";
+@use "blocks/coach";
+@use "blocks/training";
+@use "blocks/button";
+@use "blocks/accordion";
+@use "blocks/rules";
+@use "blocks/footer";

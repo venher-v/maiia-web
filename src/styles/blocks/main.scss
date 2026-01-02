@@ -1,0 +1,15 @@
+@use '../utils/mixins' as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @include onDesktop {
+    gap: 58px;
+  }
+
+  &__section {
+    padding-block-start: 18px;
+  }
+}

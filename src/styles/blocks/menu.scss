@@ -1,0 +1,97 @@
+@use "../utils/variables.scss" as *;
+@use "../utils/mixins" as *;
+
+.menu {
+  background: #f4f4f4;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  @include onDesktop {
+    background: linear-gradient(
+      180deg,
+      #eae2cf 0%,
+      #eeeadf 46.15%,
+      rgba(244, 244, 244, 0) 99.52%
+    );
+  }
+
+  &--desktop {
+    @include onDesktop {
+      background: #f4f4f4;
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+
+    padding-block-start: 76px;
+
+    @include onDesktop {
+      padding-block-start: 0;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      transition: padding-block $timeDuration;
+
+      @include onTablet {
+        gap: 36px;
+      }
+
+      @include onDesktop {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        padding-block: 58px;
+      }
+
+      &--desktop {
+        @include onDesktop {
+          padding-block: 18px;
+        }
+      }
+    }
+
+    &-item {
+      font-size: 24px;
+      line-height: 1;
+
+      @include onTablet {
+        font-size: 36px;
+      }
+
+      @include onDesktop {
+        font-size: 24px;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $txtMainColor;
+      background: transparent;
+      background-clip: text;
+      letter-spacing: normal;
+
+      transition: color $timeDuration,
+        background $timeDuration background-clip $timeDuration;
+
+      &:hover {
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #24201a 0%,
+          #6b604e 71.15%
+        );
+
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+}
