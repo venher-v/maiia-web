@@ -1,9 +1,12 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: ".",
+  base: '/maiia-web/',
+
+  root: '.',
+
   server: {
-    host: true, // дозволяє підключатися з телефону
-    port: 5173
-  }
+    host: true,
+    port: 5173,
+  },
 });
