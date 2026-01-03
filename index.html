@@ -78,19 +78,19 @@
               <span class="hero__title-text">студія<br />пілатесу</span>
             </h1>
             <ul class="hero__list">
-              <li class="hero__item">
+              <li class="hero__item js-reveal-left">
                 <h3 class="hero__item-title">Індивідуальний підхід</h3>
                 <p class="hero__item-text">
                   Жодних великих груп. Стежимо за технікою виконання кожної вправи
                 </p>
               </li>
-              <li class="hero__item hero__item--left-bottom">
+              <li class="hero__item hero__item--left-bottom js-reveal-left">
                 <h3 class="hero__item-title">Затишна атмосфера</h3>
                 <p class="hero__item-text">
                   Мінімалізм без метушні . Природне світло, тиша і голос тренера.
                 </p>
               </li>
-              <li class="hero__item">
+              <li class="hero__item js-reveal-right">
                 <h3 class="hero__item-title">Зручне розташування</h3>
                 <p class="hero__item-text">
                   3 хвилини пішки від метро Лівобережна.
@@ -103,7 +103,7 @@
                   >
                 </p>
               </li>
-              <li class="hero__item">
+              <li class="hero__item js-reveal-right">
                 <h3 class="hero__item-title">Облаштована парковка</h3>
                 <p class="hero__item-text">
                   Залиште ваше авто на парковці бізнес-центру, під відеонаглядом
@@ -114,7 +114,7 @@
         </div>
       </section>
 
-      <section id="pilates" class="pilates main__section">
+      <section id="pilates" class="pilates main__section js-reveal-left">
         <div class="container">
           <div class="pilates__content">
             <h2 class="title section-title pilates__title">Що таке пілатес?</h2>
@@ -150,7 +150,7 @@
 
       <section id="equipment" class="equipment main__section">
         <div class="container">
-          <div class="equipment__content">
+          <div class="equipment__content js-reveal-right">
             <h2 class="title section-title section-title--tablet section-title--desktop">
               Обладнання студії
             </h2>
@@ -348,15 +348,15 @@
       <section id="coach" class="coach main__section">
         <div class="container">
           <div class="coach__content">
-            <h2 class="title section-title coach__title section-title--tablet">
+            <h2 class="title section-title coach__title section-title--tablet js-reveal-left">
               Про тренера
             </h2>
 
-            <div class="coach__image-wrapper">
+            <div class="coach__image-wrapper js-reveal-right">
               <img src="./src/img/coach/coach.webp" alt="" class="image coach__image" />
             </div>
 
-            <div class="coach__text-wrapper">
+            <div class="coach__text-wrapper js-reveal-left">
               <p class="coach__text">
                 Виĸладач пілатесу — це не просто тренер, а людина з глибоĸим розумінням
                 руху, тіла та взаємодії.
@@ -400,7 +400,7 @@
           <h2 class="title section-title section-title--tablet">Обрати заняття</h2>
 
           <div class="training__cards">
-            <div class="training__card training__card--description">
+            <div class="training__card training__card--description js-reveal-desktop">
               <p class="training__card-text">
                 Формат студії передбачає особистий підхід до кожного клієнта — заняття
                 проходять у форматі персонального тренування або групового заняття
@@ -419,12 +419,12 @@
                 href="https://web.telegram.org/a/#545279654"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="button training__card-button"
+                class="button training__card-button js-reveal-bottom"
                 >Записатись</a
               >
             </div>
 
-            <div class="training__card training__card--type">
+            <div class="training__card training__card--type js-reveal-left js-reveal-desktop">
               <img
                 src="./src/img/training/training-personal.webp"
                 alt=""
@@ -444,7 +444,7 @@
               </div>
             </div>
 
-            <div class="training__card training__card--type">
+            <div class="training__card training__card--type js-reveal-right js-reveal-desktop">
               <img
                 src="./src/img/training/training-group.webp"
                 alt="training-group"
@@ -467,7 +467,7 @@
         </div>
       </section>
 
-      <section id="question" class="question main__section">
+      <section id="question" class="question main__section js-reveal-left">
         <div class="container">
           <h2 class="title section-title section-title--tablet">
             Запитують - відповідаємо
@@ -650,7 +650,7 @@
       </section>
       <section id="rules" class="rules main__section">
         <div class="container">
-          <div class="rules__content">
+          <div class="rules__content js-reveal-rules">
             <h2 class="title section-title">Правила відвідування студії:</h2>
 
             <div class="rules__list">
@@ -744,5 +744,6 @@
       </div>
     </footer>
     <script type="module" src="./src/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </body>
 </html>

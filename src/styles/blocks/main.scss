@@ -5,6 +5,8 @@
   flex-direction: column;
   gap: 36px;
 
+  overflow-x: hidden;
+
   @include onDesktop {
     gap: 58px;
   }
