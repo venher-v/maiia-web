@@ -82,7 +82,7 @@
       transition: color $timeDuration ease-in-out,
         background $timeDuration background-clip $timeDuration ease-in-out;
 
-      &:hover,&:focus {
+      &:hover,&:focus-visible {
         background: radial-gradient(
           50% 50% at 50% 50%,
           #24201a 0%,
@@ -94,7 +94,7 @@
         color: transparent;
       }
 
-      &:focus {
+      &:focus-visible {
         outline: none;
         border-bottom: 1px solid rgba(107, 96, 78, 0.6);
       }

@@ -1,0 +1,19 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.question {
+  &__title {
+    font-size: 20px;
+    line-height: 1.3;
+
+    @include onTablet {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    @include onTablet {
+      font-size: 20px;
+    }
+  }
+}

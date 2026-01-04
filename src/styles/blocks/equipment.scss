@@ -1,9 +1,14 @@
-@use "../utils/variables" as *;
-@use "../utils/mixins" as *;
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .equipment {
   &__cards {
     padding-block-end: 20px;
+  }
+
+  &__card-shadow {
+    border-radius: 32px;
+    box-shadow: 0px 4px 4px 0px #00000040;
   }
 
   &__card {
@@ -15,10 +20,10 @@
     border-radius: 32px;
     overflow: hidden;
     background: linear-gradient(180deg, #f4f4f4 0%, #eae2cf 100%);
-    box-shadow: 0px 4px 4px 0px #00000040;
 
     &-header {
       position: relative;
+      overflow: hidden;
     }
 
     &-title {
@@ -32,6 +37,8 @@
       padding-block: 4px;
 
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.15);
     }
 
     &-content {

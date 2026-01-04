@@ -12,43 +12,43 @@ function desktopAnimations() {
 
   sr.reveal('.js-reveal-desktop', {
     origin: 'bottom',
-    distance: '50%',
-    delay: 500,
+    distance: '90%',
+    viewFactor: 0.4,
     duration: 800,
-    easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+    easing: 'ease-out',
   });
 }
 
 sr.reveal('.js-reveal-left', {
   origin: 'left',
-  distance: '50%',
-  delay: 500,
+  distance: '90%',
+  viewFactor: 0.4,
   duration: 800,
-  easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  easing: 'ease-out',
 });
 
 sr.reveal('.js-reveal-right', {
   origin: 'right',
-  distance: '50%',
-  delay: 500,
+  distance: '90%',
+  viewFactor: 0.4,
   duration: 800,
-  easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  easing: 'ease-out',
 });
 
 sr.reveal('.js-reveal-bottom', {
   origin: 'bottom',
-  distance: '50%',
-  delay: 500,
+  distance: '90%',
+  viewFactor: 0.4,
   duration: 800,
-  easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  easing: 'ease-out',
 });
 
 sr.reveal('.js-reveal-rules', {
   origin: 'right',
-  distance: '50%',
-  delay: 500,
+  distance: '90%',
+  viewFactor: 0.4,
   duration: 800,
-  easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  easing: 'ease-out',
 });
 
 desktopAnimations();
