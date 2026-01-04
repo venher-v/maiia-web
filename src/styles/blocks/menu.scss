@@ -79,18 +79,24 @@
       background-clip: text;
       letter-spacing: normal;
 
-      transition: color $timeDuration,
-        background $timeDuration background-clip $timeDuration;
+      transition: color $timeDuration ease-in-out,
+        background $timeDuration background-clip $timeDuration ease-in-out;
 
-      &:hover {
+      &:hover,&:focus {
         background: radial-gradient(
           50% 50% at 50% 50%,
           #24201a 0%,
           #6b604e 71.15%
         );
 
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+      }
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid rgba(107, 96, 78, 0.6);
       }
     }
   }

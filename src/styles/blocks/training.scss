@@ -1,5 +1,5 @@
-@use "../utils/variables" as *;
-@use "../utils/mixins" as *;
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .training {
   &__cards {
@@ -107,6 +107,12 @@
 
     &-image {
       object-fit: cover;
+
+      transition: scale $timeDuration ease-in-out;
+
+      &:hover {
+        scale: 1.05;
+      }
     }
 
     &--type {

@@ -21,3 +21,10 @@
 @use "blocks/accordion";
 @use "blocks/rules";
 @use "blocks/footer";
+
+.js-reveal-left,
+.js-reveal-right,
+.js-reveal-bottom,
+.js-reveal-desktop {
+  will-change: transform, opacity;
+}
