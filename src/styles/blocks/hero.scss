@@ -8,14 +8,14 @@
   &__image {
     inline-size: 100%;
     block-size: 50vh;
-    background-image: url("../../img/header-mobile.webp");
+    background-image: url("/img/header-mobile.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 
     @include onDesktop {
       block-size: 70vh;
-      background-image: url("../../img/header-desktop.webp");
+      background-image: url("/img/header-desktop.webp");
       background-position: center;
     }
   }

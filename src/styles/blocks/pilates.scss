@@ -1,11 +1,11 @@
-@use "../utils/mixins" as *;
+@use '../utils/mixins' as *;
 
 .pilates {
   position: relative;
 
   padding-block-start: 42px;
   padding-block-end: 14px;
-  background: url("../../img/bcg-vertical.webp");
+  background: url("/img/bcg-vertical.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,7 +16,7 @@
   }
 
   @include onDesktop {
-    background-image: url("../../img/bcg-horizontal.webp");
+    background-image: url("/img/bcg-horizontal.webp");
     padding-block-end: 96px;
   }
 
@@ -64,10 +64,10 @@
   }
 
   &__text {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: wrap;
-    word-break: break-all;
+    text-align: justify;
+    hyphens: auto;
+    text-align-last: left;
+    word-spacing: 0.05em;
 
     @include onTablet {
       font-size: 20px;
@@ -115,14 +115,14 @@
   }
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 8px;
     inset-inline: 0;
     height: 24px;
 
-    background: url("../../img/circle.svg");
+    background: url('/img/circle.svg');
     background-repeat: space;
     background-size: 52px 24px;
     background-position: center;

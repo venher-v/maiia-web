@@ -6,7 +6,7 @@
     position: relative;
     padding-block: 58px;
     padding-inline: 8px;
-    background: url('../../img/bcg-vertical.webp');
+    background: url("/img/bcg-vertical.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -19,7 +19,7 @@
       inline-size: 100%;
       block-size: 24px;
 
-      background: url('../../img/circle.svg');
+      background: url("/img/circle.svg");
       background-repeat: space;
       background-size: 52px 24px;
 
@@ -102,7 +102,7 @@
     &-icon {
       inline-size: 20px;
       block-size: 20px;
-      background: url('../../img/icon/acordion-arow.png');
+      background: url("/img/icon/acordion-arow.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;

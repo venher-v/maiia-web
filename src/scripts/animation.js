@@ -13,7 +13,7 @@ function desktopAnimations() {
   sr.reveal('.js-reveal-desktop', {
     origin: 'bottom',
     distance: '90%',
-    viewFactor: 0.4,
+    viewFactor: 0.3,
     duration: 800,
     easing: 'ease-out',
   });
@@ -22,7 +22,7 @@ function desktopAnimations() {
 sr.reveal('.js-reveal-left', {
   origin: 'left',
   distance: '90%',
-  viewFactor: 0.4,
+  viewFactor: 0.3,
   duration: 800,
   easing: 'ease-out',
 });
@@ -30,7 +30,7 @@ sr.reveal('.js-reveal-left', {
 sr.reveal('.js-reveal-right', {
   origin: 'right',
   distance: '90%',
-  viewFactor: 0.4,
+  viewFactor: 0.3,
   duration: 800,
   easing: 'ease-out',
 });
@@ -38,7 +38,7 @@ sr.reveal('.js-reveal-right', {
 sr.reveal('.js-reveal-bottom', {
   origin: 'bottom',
   distance: '90%',
-  viewFactor: 0.4,
+  viewFactor: 0.3,
   duration: 800,
   easing: 'ease-out',
 });
@@ -46,7 +46,7 @@ sr.reveal('.js-reveal-bottom', {
 sr.reveal('.js-reveal-rules', {
   origin: 'right',
   distance: '90%',
-  viewFactor: 0.4,
+  viewFactor: 0.3,
   duration: 800,
   easing: 'ease-out',
 });

@@ -58,7 +58,7 @@
         inline-size: 100%;
         block-size: 24px;
 
-        background: url('../../img/circle.svg');
+        background: url("/img/circle.svg");
         background-size: 52px 24px;
         background-repeat: space;
 
@@ -136,7 +136,7 @@
 
     &-numbers {
       margin-inline-end: 4px;
-      font-family: "Great Vibes", cursive;
+      font-family: 'Great Vibes', cursive;
       font-size: 24px;
       font-style: italic;
       line-height: 0.75;

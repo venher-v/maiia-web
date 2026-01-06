@@ -14,14 +14,14 @@
   }
 
   &--open {
-    background-image: url("../../img/icon/icon-burger-menu.png");
+    background-image: url("/img/icon/icon-burger-menu.png");
 
     &:hover {
-      background-image: url("../../img/icon/icon-burger-menu-hover.png");
+      background-image: url("/img/icon/icon-burger-menu-hover.png");
     }
   }
 
   &--close {
-    background-image: url("../../img/icon/Icon-close.png");
+    background-image: url("/img/icon/Icon-close.png");
   }
 }
