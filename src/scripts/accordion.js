@@ -2,8 +2,14 @@
 
 const accordion = document.querySelector('.accordion');
 
+
+
 accordion.addEventListener('click', (e) => {
   const button = e.target.closest('.accordion__button');
+
+  if (!accordion) {
+  return;
+}
 
   if (!button) {
     return;

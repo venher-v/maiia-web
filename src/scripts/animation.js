@@ -2,6 +2,18 @@ import ScrollReveal from 'scrollreveal';
 
 const sr = ScrollReveal();
 const mq = window.matchMedia('(min-width: 1280px)');
+const animationOptions = {
+  distance: '90%',
+  viewFactor: 0.25,
+  duration: 800,
+  easing: 'ease-out',
+};
+const desctopAnimations = {
+  distance: '90%',
+  viewFactor: 0.25,
+  duration: 800,
+  easing: 'ease-out',
+};
 
 function desktopAnimations() {
   if (!mq.matches) {
@@ -11,44 +23,31 @@ function desktopAnimations() {
   sr.clean('.js-reveal-desktop');
 
   sr.reveal('.js-reveal-desktop', {
+    ...desctopAnimations,
     origin: 'bottom',
-    distance: '90%',
-    viewFactor: 0.3,
-    duration: 800,
-    easing: 'ease-out',
   });
 }
 
 sr.reveal('.js-reveal-left', {
+  ...animationOptions,
   origin: 'left',
-  distance: '90%',
-  viewFactor: 0.3,
-  duration: 800,
-  easing: 'ease-out',
+    // opacity: 0.5
+
 });
 
 sr.reveal('.js-reveal-right', {
+  ...animationOptions,
   origin: 'right',
-  distance: '90%',
-  viewFactor: 0.3,
-  duration: 800,
-  easing: 'ease-out',
 });
 
 sr.reveal('.js-reveal-bottom', {
+  ...animationOptions,
   origin: 'bottom',
-  distance: '90%',
-  viewFactor: 0.3,
-  duration: 800,
-  easing: 'ease-out',
 });
 
 sr.reveal('.js-reveal-rules', {
+  ...animationOptions,
   origin: 'right',
-  distance: '90%',
-  viewFactor: 0.3,
-  duration: 800,
-  easing: 'ease-out',
 });
 
 desktopAnimations();

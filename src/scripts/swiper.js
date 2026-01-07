@@ -3,10 +3,12 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
 
-let swiper = null;
+const initSwiper = () => {
+  if (!document.querySelector('.swiper')) {
+    return;
+  }
 
-const initSWiper = () => {
-  swiper = new Swiper('.swiper', {
+  new Swiper('.swiper', {
     initialSlide: 0,
     loop: true,
     autoplay: {
@@ -48,4 +50,4 @@ const initSWiper = () => {
   });
 };
 
-initSWiper();
+initSwiper();
